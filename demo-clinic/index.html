@@ -1,0 +1,358 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>عيادة د. نموذج لطب الأسنان — نموذج توضيحي</title>
+<meta name="description" content="نموذج توضيحي لصفحة عيادة أسنان عربية من تصميم Forma Digital.">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#0b3b40">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#0f2326;--ink-2:#51666a;--ink-3:#8a9b9e;--line:#e5ecec;
+  --brand:#0b3b40;--brand-2:#12606a;--accent:#b8925a;--tint:#f2f7f6;
+  --bg:#ffffff;--wa:#1faa59;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"IBM Plex Sans Arabic",Tahoma,sans-serif;font-size:16px;line-height:1.8;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+img{display:block;max-width:100%}
+.wrap{max-width:1180px;margin:0 auto;padding:0 20px}
+.i{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;flex:none}
+.wa-ic{width:20px;height:20px;fill:currentColor;flex:none}
+
+.demo{background:#071f22;color:#9fb8b6;font-size:.75rem;text-align:center;padding:5px 16px}
+
+/* header */
+header{position:absolute;top:26px;left:0;right:0;z-index:20;color:#fff}
+.nav{display:flex;align-items:center;justify-content:space-between;height:84px;gap:20px}
+.brand{display:flex;align-items:center;gap:12px}
+.brand .logo{width:44px;height:44px;border-radius:50%;border:1.5px solid rgba(255,255,255,.6);display:grid;place-items:center}
+.brand .logo svg{width:22px;height:22px;stroke:#fff}
+.brand b{display:block;font-weight:600;font-size:1.05rem;line-height:1.3}
+.brand small{display:block;font-size:.75rem;opacity:.75;letter-spacing:.3px}
+.links{display:none;gap:32px;font-size:.95rem}
+.links a{opacity:.85}.links a:hover{opacity:1}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;height:52px;padding:0 26px;border-radius:999px;font-weight:600;font-size:.97rem;transition:background .2s,color .2s,transform .2s;white-space:nowrap}
+.btn:hover{transform:translateY(-1px)}
+.btn-light{background:#fff;color:var(--brand)}
+.btn-wa{background:var(--wa);color:#fff}
+.btn-ghost{border:1px solid rgba(255,255,255,.5);color:#fff}
+.btn-ghost:hover{background:rgba(255,255,255,.1)}
+.btn-brand{background:var(--brand);color:#fff}
+.btn-brand:hover{background:var(--brand-2)}
+.btn-outline{border:1px solid var(--line);color:var(--brand);background:#fff}
+.nav .btn{height:44px;padding:0 20px;font-size:.9rem}
+
+/* hero */
+.hero{position:relative;min-height:640px;display:flex;align-items:flex-end;color:#fff;background:#0b3b40}
+.hero-img{position:absolute;inset:0;background:url("https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=1800&q=80") center/cover no-repeat}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(270deg,rgba(7,31,34,.92) 0%,rgba(7,31,34,.75) 45%,rgba(7,31,34,.25) 100%)}
+.hero .wrap{position:relative;z-index:2;width:100%;padding-top:150px;padding-bottom:120px}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:.85rem;letter-spacing:.4px;color:#d8e6e4}
+.eyebrow::before{content:"";width:28px;height:1px;background:var(--accent)}
+h1{font-size:clamp(2.1rem,5.6vw,3.9rem);font-weight:600;line-height:1.25;margin:18px 0 18px;max-width:640px;letter-spacing:-.5px}
+.hero p{max-width:520px;font-size:1.1rem;font-weight:300;color:#dbe7e6;margin:0 0 34px}
+.hero .actions{display:flex;flex-wrap:wrap;gap:12px}
+
+/* info strip */
+.strip{position:relative;z-index:5;margin-top:-64px}
+.strip-in{background:#fff;border-radius:20px;box-shadow:0 20px 50px rgba(15,35,38,.12);display:grid}
+.strip-item{display:flex;gap:14px;align-items:center;padding:22px 26px;border-bottom:1px solid var(--line)}
+.strip-item:last-child{border:0}
+.strip-item .ic{width:46px;height:46px;border-radius:50%;background:var(--tint);color:var(--brand-2);display:grid;place-items:center}
+.strip-item small{display:block;color:var(--ink-3);font-size:.8rem}
+.strip-item b{font-weight:600;font-size:.98rem}
+.status{display:inline-flex;align-items:center;gap:6px}
+.status::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--wa)}
+.status.closed::before{background:#c0392b}
+
+/* sections */
+section{padding:96px 0}
+.kicker{display:inline-flex;align-items:center;gap:10px;color:var(--accent);font-size:.85rem;font-weight:600;letter-spacing:.4px}
+.kicker::before{content:"";width:24px;height:1px;background:var(--accent)}
+h2{font-size:clamp(1.7rem,3.6vw,2.5rem);font-weight:600;line-height:1.35;margin:12px 0 16px;letter-spacing:-.3px}
+.sub{color:var(--ink-2);max-width:560px;margin:0}
+
+.two{display:grid;gap:48px;align-items:center}
+.photo{border-radius:24px;overflow:hidden;background:var(--tint);aspect-ratio:4/5}
+.photo img{width:100%;height:100%;object-fit:cover}
+
+.svc-list{list-style:none;margin:32px 0 0;padding:0;border-top:1px solid var(--line)}
+.svc-list li{display:grid;grid-template-columns:44px 1fr;gap:16px;padding:20px 0;border-bottom:1px solid var(--line)}
+.svc-list .ic{width:44px;height:44px;border-radius:12px;background:var(--tint);color:var(--brand-2);display:grid;place-items:center}
+.svc-list h3{margin:0;font-size:1.05rem;font-weight:600}
+.svc-list p{margin:2px 0 0;color:var(--ink-2);font-size:.94rem}
+
+.tint{background:var(--tint)}
+.doc-points{list-style:none;padding:0;margin:28px 0 32px;display:grid;gap:14px}
+.doc-points li{display:flex;gap:12px;color:var(--ink-2)}
+.doc-points .i{color:var(--brand-2);margin-top:5px}
+.sig{display:flex;align-items:center;gap:14px;padding-top:24px;border-top:1px solid #d9e4e3}
+.sig b{display:block;font-weight:600}
+.sig small{color:var(--ink-3)}
+
+.gallery{display:grid;gap:16px;margin-top:40px}
+.gallery figure{margin:0;border-radius:20px;overflow:hidden;position:relative;aspect-ratio:4/3;background:var(--tint)}
+.gallery img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.gallery figure:hover img{transform:scale(1.04)}
+.gallery figcaption{position:absolute;bottom:12px;right:12px;background:rgba(255,255,255,.92);border-radius:999px;padding:4px 14px;font-size:.82rem;font-weight:500}
+
+.steps{display:grid;gap:0;margin-top:40px;border-top:1px solid var(--line)}
+.step{padding:28px 0;border-bottom:1px solid var(--line);display:grid;grid-template-columns:64px 1fr;gap:16px}
+.step .n{font-size:2rem;font-weight:300;color:var(--accent);line-height:1.2}
+.step h3{margin:0 0 4px;font-size:1.1rem;font-weight:600}
+.step p{margin:0;color:var(--ink-2)}
+
+.hours{width:100%;border-collapse:collapse}
+.hours td{padding:14px 0;border-bottom:1px solid var(--line)}
+.hours td:last-child{text-align:left;color:var(--ink-2);direction:rtl}
+.hours tr.today td{color:var(--brand-2);font-weight:600}
+.off{color:#b0413e!important}
+.map{display:block;position:relative;border-radius:20px;overflow:hidden;min-height:300px;background:
+  linear-gradient(90deg,transparent 47%,#fff 47% 50%,transparent 50%),
+  linear-gradient(0deg,transparent 60%,#fff 60% 63%,transparent 63%),
+  linear-gradient(28deg,transparent 32%,rgba(255,255,255,.85) 32% 34.5%,transparent 34.5%),
+  linear-gradient(118deg,transparent 70%,rgba(255,255,255,.7) 70% 71.5%,transparent 71.5%),
+  #dfeceb}
+.map .pin{position:absolute;top:44%;left:48%;transform:translate(-50%,-100%);width:48px;height:48px;border-radius:50% 50% 50% 0;rotate:-45deg;background:var(--brand);display:grid;place-items:center;box-shadow:0 10px 20px rgba(11,59,64,.35)}
+.map .pin span{width:14px;height:14px;border-radius:50%;background:#fff}
+.map .addr{position:absolute;bottom:16px;right:16px;left:16px;background:#fff;border-radius:14px;padding:14px 16px;font-size:.92rem;display:flex;gap:10px;align-items:center}
+
+details{border-bottom:1px solid var(--line)}
+details:first-of-type{border-top:1px solid var(--line)}
+summary{cursor:pointer;list-style:none;padding:22px 0;font-weight:600;font-size:1.02rem;display:flex;justify-content:space-between;align-items:center;gap:12px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"";width:10px;height:10px;border-left:1.5px solid var(--ink-2);border-bottom:1.5px solid var(--ink-2);rotate:-45deg;transition:rotate .2s;margin-left:6px}
+details[open] summary::after{rotate:135deg}
+details p{margin:0 0 22px;color:var(--ink-2);max-width:720px}
+
+.cta{position:relative;border-radius:28px;overflow:hidden;color:#fff;padding:72px 32px;text-align:center;background:#0b3b40}
+.cta::before{content:"";position:absolute;inset:0;background:url("https://images.unsplash.com/photo-1629909614456-6b1c5c94cecc?auto=format&fit=crop&w=1600&q=70") center/cover;opacity:.28}
+.cta > *{position:relative}
+.cta h2{margin:0 0 10px}
+.cta p{color:#d3e2e0;margin:0 auto 30px;max-width:480px}
+.cta .actions{display:flex;flex-wrap:wrap;gap:12px;justify-content:center}
+
+footer{background:#071f22;color:#9fb8b6;padding:48px 0 120px;font-size:.9rem}
+.foot{display:grid;gap:24px}
+footer b{color:#fff;font-weight:600}
+footer .credit{border-top:1px solid rgba(255,255,255,.1);margin-top:32px;padding-top:20px;font-size:.8rem;color:#6f8e8b}
+
+.mbar{position:fixed;z-index:30;bottom:0;left:0;right:0;display:grid;grid-template-columns:1fr 1.7fr;gap:10px;padding:10px 14px calc(10px + env(safe-area-inset-bottom));background:#fff;border-top:1px solid var(--line);box-shadow:0 -8px 24px rgba(15,35,38,.06)}
+.mbar .btn{height:50px;border-radius:14px}
+
+@media (min-width:900px){
+  .links{display:flex}
+  .hero{min-height:760px}
+  .hero .wrap{padding-bottom:150px}
+  .strip-in{grid-template-columns:repeat(3,1fr)}
+  .strip-item{border-bottom:0;border-left:1px solid var(--line)}
+  .strip-item:last-child{border-left:0}
+  .two{grid-template-columns:1fr 1fr;gap:80px}
+  .two.rev .photo{order:2}
+  .gallery{grid-template-columns:1.4fr 1fr 1fr}
+  .gallery figure:first-child{aspect-ratio:auto}
+  .steps{grid-template-columns:repeat(3,1fr);border-top:0;gap:32px}
+  .step{grid-template-columns:1fr;border-bottom:0;border-top:1px solid var(--ink);padding-top:24px}
+  .foot{grid-template-columns:2fr 1fr 1fr}
+  .mbar{display:none}
+  footer{padding-bottom:40px}
+}
+@media (max-width:899px){
+  header{top:24px}
+  .nav{height:72px}
+  .nav .btn{display:none}
+  .hero .wrap{padding-top:120px;padding-bottom:104px}
+  .hero::after{background:linear-gradient(0deg,rgba(7,31,34,.95) 0%,rgba(7,31,34,.7) 55%,rgba(7,31,34,.35) 100%)}
+  .hero .actions{display:grid;grid-template-columns:1fr}
+  section{padding:72px 0}
+  .photo{aspect-ratio:4/3}
+  .strip-item{padding:18px 20px}
+}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="tooth" viewBox="0 0 24 24"><path d="M7 3c-2.5 0-4 2-4 4.5 0 2 1 3.5 1.5 5.5.6 2.5.8 8 3 8 1.8 0 1.6-5 4.5-5s2.7 5 4.5 5c2.2 0 2.4-5.5 3-8 .5-2 1.5-3.5 1.5-5.5C21 5 19.5 3 17 3c-2 0-3 1-5 1S9 3 7 3z"/></symbol>
+  <symbol id="clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+  <symbol id="pin" viewBox="0 0 24 24"><path d="M19 10c0 5.5-7 11-7 11s-7-5.5-7-11a7 7 0 0 1 14 0z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+  <symbol id="phone" viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></symbol>
+  <symbol id="search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></symbol>
+  <symbol id="spark" viewBox="0 0 24 24"><path d="M12 3l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9z"/></symbol>
+  <symbol id="pulse" viewBox="0 0 24 24"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></symbol>
+  <symbol id="align" viewBox="0 0 24 24"><rect x="3" y="8" width="18" height="8" rx="4"/><path d="M8 8v8M12 8v8M16 8v8"/></symbol>
+  <symbol id="heart" viewBox="0 0 24 24"><path d="M19 14c1.5-1.5 3-3.2 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.8 0-3 .5-4.5 2-1.5-1.5-2.7-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4 3 5.5l7 7z"/></symbol>
+  <symbol id="check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+  <symbol id="wa" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2.1 1-2.4c.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .6l-.4.6-.4.5c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.1.5.1.7-.1l1-1.2c.2-.3.4-.2.7-.1l2 1c.3.1.5.2.5.3.1.2.1.6-.1 1.2z"/></symbol>
+</svg>
+
+<div class="demo">نموذج توضيحي من تصميم Forma Digital — اسم العيادة وبياناتها افتراضية</div>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#top">
+      <span class="logo"><svg class="i"><use href="#tooth"/></svg></span>
+      <span><b>عيادة د. نموذج</b><small>لطب وتجميل الأسنان</small></span>
+    </a>
+    <nav class="links">
+      <a href="#services">الخدمات</a><a href="#doctor">الطبيب</a><a href="#visit">زيارتك الأولى</a><a href="#contact">المواعيد والعنوان</a>
+    </nav>
+    <a class="btn btn-light" href="#book">احجز موعدًا</a>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero" style="padding:0">
+  <div class="hero-img" role="img" aria-label="غرفة علاج أسنان حديثة"></div>
+  <div class="wrap">
+    <span class="eyebrow">طب الأسنان للكبار والأطفال</span>
+    <h1>رعاية دقيقة لابتسامتك، في بيئة هادئة ومريحة</h1>
+    <p>تشخيص واضح، وخطة علاج مكتوبة قبل البدء، ومواعيد مسبقة تحترم وقتك.</p>
+    <div class="actions">
+      <a class="btn btn-wa" href="https://wa.me/201000000000?text=%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%AD%D8%AC%D8%B2%20%D9%85%D9%88%D8%B9%D8%AF"><svg class="wa-ic"><use href="#wa"/></svg>احجز عبر واتساب</a>
+      <a class="btn btn-ghost" href="#services">تعرّف على الخدمات</a>
+    </div>
+  </div>
+</section>
+
+<div class="wrap strip">
+  <div class="strip-in">
+    <div class="strip-item"><span class="ic"><svg class="i"><use href="#clock"/></svg></span><div><small>مواعيد اليوم</small><b id="todayHours">٤:٠٠ م – ١٠:٠٠ م</b> <span class="status" id="status" style="font-size:.8rem;color:var(--ink-2);margin-inline-start:6px">مفتوح</span></div></div>
+    <div class="strip-item"><span class="ic"><svg class="i"><use href="#pin"/></svg></span><div><small>العنوان</small><b>شارع افتراضي، مدينة افتراضية</b></div></div>
+    <div class="strip-item"><span class="ic"><svg class="i"><use href="#phone"/></svg></span><div><small>للحجز والاستفسار</small><b dir="ltr">+20 100 000 0000</b></div></div>
+  </div>
+</div>
+
+<section id="services">
+  <div class="wrap two">
+    <div class="photo"><img src="https://images.unsplash.com/photo-1606811856475-5e6fcdc6e509?auto=format&fit=crop&w=1000&q=80" alt="أدوات فحص الأسنان" loading="lazy"></div>
+    <div>
+      <span class="kicker">خدماتنا</span>
+      <h2>علاج متكامل تحت سقف واحد</h2>
+      <p class="sub">نبدأ دائمًا بفحص شامل، ثم نتفق معك على الخطة الأنسب لحالتك وميزانيتك.</p>
+      <ul class="svc-list">
+        <li><span class="ic"><svg class="i"><use href="#search"/></svg></span><div><h3>الفحص والاستشارة</h3><p>فحص كامل وشرح للحالة وخيارات العلاج المتاحة.</p></div></li>
+        <li><span class="ic"><svg class="i"><use href="#spark"/></svg></span><div><h3>التنظيف والتلميع</h3><p>إزالة الجير والتصبغات في جلسة واحدة.</p></div></li>
+        <li><span class="ic"><svg class="i"><use href="#tooth"/></svg></span><div><h3>الحشو التجميلي</h3><p>حشوات بلون السن الطبيعي لا تظهر عند الابتسام.</p></div></li>
+        <li><span class="ic"><svg class="i"><use href="#pulse"/></svg></span><div><h3>علاج العصب</h3><p>بتخدير مريح، في جلسة أو جلستين حسب الحالة.</p></div></li>
+        <li><span class="ic"><svg class="i"><use href="#align"/></svg></span><div><h3>تقويم الأسنان</h3><p>للأطفال والبالغين، مع متابعة دورية منتظمة.</p></div></li>
+        <li><span class="ic"><svg class="i"><use href="#heart"/></svg></span><div><h3>أسنان الأطفال</h3><p>أسلوب هادئ يخفف من قلق الطفل منذ الزيارة الأولى.</p></div></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="doctor" class="tint">
+  <div class="wrap two rev">
+    <div class="photo"><img src="https://images.unsplash.com/photo-1606811842243-af7e16970c1f?auto=format&fit=crop&w=1000&q=80" alt="صورة توضيحية لطبيب أسنان" loading="lazy"></div>
+    <div>
+      <span class="kicker">عن الطبيب</span>
+      <h2>اهتمام شخصي بكل مريض، من الزيارة الأولى حتى نهاية العلاج</h2>
+      <ul class="doc-points">
+        <li><svg class="i"><use href="#check"/></svg><span>شرح الحالة بلغة بسيطة، دون مصطلحات معقدة.</span></li>
+        <li><svg class="i"><use href="#check"/></svg><span>أدوات معقمة ومغلفة تُفتح أمام المريض.</span></li>
+        <li><svg class="i"><use href="#check"/></svg><span>تكلفة وعدد جلسات واضحان قبل بدء أي علاج.</span></li>
+      </ul>
+      <div class="sig">
+        <div><b>د. نموذج</b><small>بكالوريوس طب وجراحة الفم والأسنان — اسم ومؤهل افتراضيان</small></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="visit">
+  <div class="wrap">
+    <span class="kicker">زيارتك الأولى</span>
+    <h2>ثلاث خطوات بسيطة</h2>
+    <div class="steps">
+      <div class="step"><span class="n">٠١</span><div><h3>احجز موعدك</h3><p>برسالة واتساب أو اتصال، واختر الوقت الذي يناسبك.</p></div></div>
+      <div class="step"><span class="n">٠٢</span><div><h3>فحص وخطة مكتوبة</h3><p>تعرف التشخيص والتكلفة وعدد الجلسات قبل أي إجراء.</p></div></div>
+      <div class="step"><span class="n">٠٣</span><div><h3>علاج ومتابعة</h3><p>تذكير بالمواعيد عبر واتساب ومتابعة بعد انتهاء العلاج.</p></div></div>
+    </div>
+    <div class="gallery">
+      <figure><img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=1000&q=75" alt="غرفة العلاج" loading="lazy"><figcaption>غرفة العلاج</figcaption></figure>
+      <figure><img src="https://images.unsplash.com/photo-1629909614456-6b1c5c94cecc?auto=format&fit=crop&w=700&q=75" alt="صالة الانتظار" loading="lazy"><figcaption>صالة الانتظار</figcaption></figure>
+      <figure><img src="https://images.unsplash.com/photo-1629909615184-74f495363b67?auto=format&fit=crop&w=700&q=75" alt="كرسي الأسنان" loading="lazy"><figcaption>تجهيزات حديثة</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="tint">
+  <div class="wrap two">
+    <div>
+      <span class="kicker">المواعيد والعنوان</span>
+      <h2>نستقبلك بموعد مسبق</h2>
+      <table class="hours" id="hoursTable">
+        <tr data-d="6"><td>السبت</td><td>٤:٠٠ م – ١٠:٠٠ م</td></tr>
+        <tr data-d="0"><td>الأحد</td><td>٤:٠٠ م – ١٠:٠٠ م</td></tr>
+        <tr data-d="1"><td>الاثنين</td><td>٤:٠٠ م – ١٠:٠٠ م</td></tr>
+        <tr data-d="2"><td>الثلاثاء</td><td>٤:٠٠ م – ١٠:٠٠ م</td></tr>
+        <tr data-d="3"><td>الأربعاء</td><td>٤:٠٠ م – ١٠:٠٠ م</td></tr>
+        <tr data-d="4"><td>الخميس</td><td>٤:٠٠ م – ٨:٠٠ م</td></tr>
+        <tr data-d="5"><td>الجمعة</td><td class="off">مغلق</td></tr>
+      </table>
+    </div>
+    <a class="map" href="https://maps.google.com/?q=Cairo" aria-label="فتح الموقع على الخريطة">
+      <span class="pin"><span></span></span>
+      <span class="addr"><svg class="i"><use href="#pin"/></svg>شارع افتراضي، بجوار معلم افتراضي — اضغط لعرض الاتجاهات</span>
+    </a>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="wrap" style="max-width:860px">
+    <span class="kicker">أسئلة شائعة</span>
+    <h2>قبل أن تحجز</h2>
+    <details><summary>هل يلزم الحجز المسبق؟</summary><p>نعم، تعمل العيادة بنظام المواعيد المسبقة حتى لا تضطر إلى الانتظار. يمكنك الحجز عبر واتساب أو بالاتصال.</p></details>
+    <details><summary>هل يشمل الفحص خطة العلاج؟</summary><p>نعم، تحصل بعد الفحص على خطة مكتوبة تتضمن الخطوات وعدد الجلسات والتكلفة التقريبية.</p></details>
+    <details><summary>هل تستقبلون الأطفال؟</summary><p>نعم، ونخصص وقتًا أطول للزيارة الأولى للطفل حتى يعتاد المكان.</p></details>
+  </div>
+</section>
+
+<section id="book" style="padding-top:0">
+  <div class="wrap">
+    <div class="cta">
+      <h2>احجز موعدك في أقل من دقيقة</h2>
+      <p>أرسل اسمك والوقت المناسب لك، وسنؤكد موعدك في أقرب وقت.</p>
+      <div class="actions">
+        <a class="btn btn-wa" href="https://wa.me/201000000000?text=%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%AD%D8%AC%D8%B2%20%D9%85%D9%88%D8%B9%D8%AF"><svg class="wa-ic"><use href="#wa"/></svg>احجز عبر واتساب</a>
+        <a class="btn btn-ghost" href="tel:+201000000000"><svg class="i"><use href="#phone"/></svg>اتصل بنا</a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div><b>عيادة د. نموذج</b><br>لطب وتجميل الأسنان — مدينة افتراضية</div>
+      <div><b>المواعيد</b><br>السبت – الخميس، مساءً</div>
+      <div><b>تواصل</b><br><span dir="ltr">+20 100 000 0000</span></div>
+    </div>
+    <div class="credit">نموذج توضيحي من تصميم Forma Digital · الصور من Unsplash</div>
+  </div>
+</footer>
+
+<div class="mbar">
+  <a class="btn btn-outline" href="tel:+201000000000"><svg class="i"><use href="#phone"/></svg>اتصال</a>
+  <a class="btn btn-wa" href="https://wa.me/201000000000?text=%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%AD%D8%AC%D8%B2%20%D9%85%D9%88%D8%B9%D8%AF"><svg class="wa-ic"><use href="#wa"/></svg>احجز عبر واتساب</a>
+</div>
+
+<script>
+(function(){
+  var now=new Date(),d=now.getDay(),h=now.getHours()+now.getMinutes()/60;
+  var row=document.querySelector('#hoursTable tr[data-d="'+d+'"]');
+  if(row){row.className='today';document.getElementById('todayHours').textContent=row.cells[1].textContent;}
+  var open=d===5?0:16,close=d===5?0:(d===4?20:22),s=document.getElementById('status');
+  if(!(h>=open&&h<close)){s.className='status closed';s.textContent='مغلق الآن';}
+  else{s.className='status';s.textContent='مفتوح الآن';}
+})();
+</script>
+</body>
+</html>

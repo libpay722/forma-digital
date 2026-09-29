@@ -1,0 +1,314 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>أ. نموذج لتدريس الرياضيات — نموذج توضيحي</title>
+<meta name="description" content="نموذج توضيحي لصفحة مدرّس عربية من تصميم Forma Digital.">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#141b3d">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#141833;--ink-2:#565b7a;--ink-3:#8b90aa;--line:#e7e8f0;
+  --brand:#141b3d;--brand-2:#26327a;--accent:#d9912a;--tint:#f4f5fa;
+  --bg:#ffffff;--wa:#1faa59;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"IBM Plex Sans Arabic",Tahoma,sans-serif;font-size:16px;line-height:1.8;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+img{display:block;max-width:100%}
+.wrap{max-width:1180px;margin:0 auto;padding:0 20px}
+.i{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;flex:none}
+.wa-ic{width:20px;height:20px;fill:currentColor;flex:none}
+.demo{background:#0b1029;color:#a3a9c9;font-size:.75rem;text-align:center;padding:5px 16px}
+
+header{position:absolute;top:26px;left:0;right:0;z-index:20;color:#fff}
+.nav{display:flex;align-items:center;justify-content:space-between;height:84px;gap:20px}
+.brand{display:flex;align-items:center;gap:12px}
+.brand .logo{width:44px;height:44px;border-radius:50%;border:1.5px solid rgba(255,255,255,.6);display:grid;place-items:center;font-size:1.25rem;font-weight:500}
+.brand b{display:block;font-weight:600;font-size:1.05rem;line-height:1.3}
+.brand small{display:block;font-size:.75rem;opacity:.75}
+.links{display:none;gap:32px;font-size:.95rem}
+.links a{opacity:.85}.links a:hover{opacity:1}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;height:52px;padding:0 26px;border-radius:999px;font-weight:600;font-size:.97rem;transition:background .2s,transform .2s;white-space:nowrap}
+.btn:hover{transform:translateY(-1px)}
+.btn-light{background:#fff;color:var(--brand)}
+.btn-wa{background:var(--wa);color:#fff}
+.btn-ghost{border:1px solid rgba(255,255,255,.5);color:#fff}
+.btn-ghost:hover{background:rgba(255,255,255,.1)}
+.btn-outline{border:1px solid var(--line);color:var(--brand);background:#fff}
+.nav .btn{height:44px;padding:0 20px;font-size:.9rem}
+
+.hero{position:relative;min-height:640px;display:flex;align-items:flex-end;color:#fff;background:var(--brand)}
+.hero-img{position:absolute;inset:0;background:url("https://images.unsplash.com/photo-1598981457915-aea220950616?auto=format&fit=crop&w=1800&q=80") center/cover no-repeat}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(270deg,rgba(11,16,41,.94) 0%,rgba(11,16,41,.78) 45%,rgba(11,16,41,.3) 100%)}
+.hero .wrap{position:relative;z-index:2;width:100%;padding-top:150px;padding-bottom:120px}
+.badge-open{display:inline-flex;align-items:center;gap:8px;background:rgba(217,145,42,.18);border:1px solid rgba(217,145,42,.5);color:#f6c77e;border-radius:999px;padding:5px 14px;font-size:.85rem;font-weight:500}
+.badge-open::before{content:"";width:7px;height:7px;border-radius:50%;background:#f6c77e}
+h1{font-size:clamp(2.1rem,5.6vw,3.9rem);font-weight:600;line-height:1.25;margin:18px 0 18px;max-width:660px;letter-spacing:-.5px}
+.hero p{max-width:540px;font-size:1.1rem;font-weight:300;color:#d6daee;margin:0 0 34px}
+.hero .actions{display:flex;flex-wrap:wrap;gap:12px}
+
+.strip{position:relative;z-index:5;margin-top:-64px}
+.strip-in{background:#fff;border-radius:20px;box-shadow:0 20px 50px rgba(20,24,51,.12);display:grid}
+.strip-item{display:flex;gap:14px;align-items:center;padding:22px 26px;border-bottom:1px solid var(--line)}
+.strip-item:last-child{border:0}
+.strip-item .ic{width:46px;height:46px;border-radius:50%;background:var(--tint);color:var(--brand-2);display:grid;place-items:center}
+.strip-item small{display:block;color:var(--ink-3);font-size:.8rem}
+.strip-item b{font-weight:600;font-size:.98rem}
+
+section{padding:96px 0}
+.kicker{display:inline-flex;align-items:center;gap:10px;color:var(--accent);font-size:.85rem;font-weight:600;letter-spacing:.4px}
+.kicker::before{content:"";width:24px;height:1px;background:var(--accent)}
+h2{font-size:clamp(1.7rem,3.6vw,2.5rem);font-weight:600;line-height:1.35;margin:12px 0 16px;letter-spacing:-.3px}
+.sub{color:var(--ink-2);max-width:560px;margin:0}
+.tint{background:var(--tint)}
+
+.two{display:grid;gap:48px;align-items:center}
+.photo{border-radius:24px;overflow:hidden;background:var(--tint);aspect-ratio:4/5}
+.photo img{width:100%;height:100%;object-fit:cover}
+
+.feat-list{list-style:none;margin:32px 0 0;padding:0;border-top:1px solid var(--line)}
+.feat-list li{display:grid;grid-template-columns:44px 1fr;gap:16px;padding:20px 0;border-bottom:1px solid var(--line)}
+.feat-list .ic{width:44px;height:44px;border-radius:12px;background:var(--tint);color:var(--brand-2);display:grid;place-items:center}
+.feat-list h3{margin:0;font-size:1.05rem;font-weight:600}
+.feat-list p{margin:2px 0 0;color:var(--ink-2);font-size:.94rem}
+
+.sched{margin-top:36px;background:#fff;border-radius:20px;border:1px solid var(--line);overflow:hidden}
+.row{display:grid;grid-template-columns:1.3fr 1fr auto;gap:12px;align-items:center;padding:18px 24px;border-bottom:1px solid var(--line)}
+.row:last-child{border-bottom:0}
+.row.head{background:var(--brand);color:#cdd2ec;font-size:.85rem;padding:12px 24px}
+.row b{font-weight:600}
+.row .when{color:var(--ink-2);font-size:.94rem}
+.tag{font-size:.78rem;font-weight:600;border-radius:999px;padding:4px 12px;white-space:nowrap;text-align:center}
+.tag.ok{background:#e5f6ec;color:#157a40}
+.tag.few{background:#fdf1de;color:#9a5d07}
+.tag.full{background:#f9e6e4;color:#b0352a}
+.row.is-full b,.row.is-full .when{color:var(--ink-3)}
+
+.report{background:#fff;border-radius:24px;padding:22px;box-shadow:0 20px 50px rgba(20,24,51,.1);max-width:380px;margin:0 auto;border:1px solid var(--line)}
+.report-top{display:flex;align-items:center;gap:12px;padding-bottom:14px;border-bottom:1px solid var(--line);margin-bottom:14px}
+.report-top .logo{width:40px;height:40px;border-radius:50%;background:var(--brand);color:#fff;display:grid;place-items:center;font-size:1.1rem}
+.report-top small{display:block;color:var(--ink-3);font-size:.78rem}
+.msg{background:#e9f7ef;border-radius:16px 16px 16px 4px;padding:12px 14px;font-size:.92rem;color:#1b4a2f;margin-bottom:10px}
+.msg .r{display:flex;justify-content:space-between;gap:10px;padding:2px 0}
+.msg .r b{font-weight:600;color:#0f3a22}
+.msg small{display:block;text-align:left;color:#6a917a;font-size:.72rem;margin-top:4px}
+
+.steps{display:grid;gap:0;margin-top:40px;border-top:1px solid var(--line)}
+.step{padding:28px 0;border-bottom:1px solid var(--line);display:grid;grid-template-columns:64px 1fr;gap:16px}
+.step .n{font-size:2rem;font-weight:300;color:var(--accent);line-height:1.2}
+.step h3{margin:0 0 4px;font-size:1.1rem;font-weight:600}
+.step p{margin:0;color:var(--ink-2)}
+
+details{border-bottom:1px solid var(--line)}
+details:first-of-type{border-top:1px solid var(--line)}
+summary{cursor:pointer;list-style:none;padding:22px 0;font-weight:600;font-size:1.02rem;display:flex;justify-content:space-between;align-items:center;gap:12px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"";width:10px;height:10px;border-left:1.5px solid var(--ink-2);border-bottom:1.5px solid var(--ink-2);rotate:-45deg;transition:rotate .2s;margin-left:6px}
+details[open] summary::after{rotate:135deg}
+details p{margin:0 0 22px;color:var(--ink-2);max-width:720px}
+
+.cta{position:relative;border-radius:28px;overflow:hidden;color:#fff;padding:72px 32px;text-align:center;background:var(--brand)}
+.cta::before{content:"";position:absolute;inset:0;background:url("https://images.unsplash.com/photo-1509228468518-180dd4864904?auto=format&fit=crop&w=1600&q=70") center/cover;opacity:.18}
+.cta > *{position:relative}
+.cta h2{margin:0 0 10px}
+.cta p{color:#cfd4ec;margin:0 auto 30px;max-width:480px}
+.cta .actions{display:flex;flex-wrap:wrap;gap:12px;justify-content:center}
+
+footer{background:#0b1029;color:#a3a9c9;padding:48px 0 120px;font-size:.9rem}
+.foot{display:grid;gap:24px}
+footer b{color:#fff;font-weight:600}
+footer .credit{border-top:1px solid rgba(255,255,255,.1);margin-top:32px;padding-top:20px;font-size:.8rem;color:#737a9e}
+
+.mbar{position:fixed;z-index:30;bottom:0;left:0;right:0;display:grid;grid-template-columns:1fr 1.7fr;gap:10px;padding:10px 14px calc(10px + env(safe-area-inset-bottom));background:#fff;border-top:1px solid var(--line);box-shadow:0 -8px 24px rgba(20,24,51,.06)}
+.mbar .btn{height:50px;border-radius:14px}
+
+@media (min-width:900px){
+  .links{display:flex}
+  .hero{min-height:760px}
+  .hero .wrap{padding-bottom:150px}
+  .strip-in{grid-template-columns:repeat(3,1fr)}
+  .strip-item{border-bottom:0;border-left:1px solid var(--line)}
+  .strip-item:last-child{border-left:0}
+  .two{grid-template-columns:1fr 1fr;gap:80px}
+  .two.rev > :first-child{order:2}
+  .steps{grid-template-columns:repeat(3,1fr);border-top:0;gap:32px}
+  .step{grid-template-columns:1fr;border-bottom:0;border-top:1px solid var(--ink);padding-top:24px}
+  .foot{grid-template-columns:2fr 1fr 1fr}
+  .mbar{display:none}
+  footer{padding-bottom:40px}
+}
+@media (max-width:899px){
+  header{top:24px}
+  .nav{height:72px}
+  .nav .btn{display:none}
+  .hero .wrap{padding-top:120px;padding-bottom:104px}
+  .hero::after{background:linear-gradient(0deg,rgba(11,16,41,.95) 0%,rgba(11,16,41,.72) 55%,rgba(11,16,41,.4) 100%)}
+  .hero .actions{display:grid;grid-template-columns:1fr}
+  section{padding:72px 0}
+  .photo{aspect-ratio:4/3}
+  .strip-item{padding:18px 20px}
+  .row{grid-template-columns:1fr auto;padding:16px 18px}
+  .row .when{grid-column:1;grid-row:2;margin-top:-6px}
+  .row .tag{grid-column:2;grid-row:1 / span 2}
+  .row.head{display:none}
+}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="cal" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="17" rx="3"/><path d="M16 2v4M8 2v4M3 10h18"/></symbol>
+  <symbol id="users" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.9M16 3.1a4 4 0 0 1 0 7.8"/></symbol>
+  <symbol id="book" viewBox="0 0 24 24"><path d="M2 4h6a4 4 0 0 1 4 4v13a3 3 0 0 0-3-3H2zM22 4h-6a4 4 0 0 0-4 4v13a3 3 0 0 1 3-3h7z"/></symbol>
+  <symbol id="clip" viewBox="0 0 24 24"><rect x="5" y="4" width="14" height="18" rx="2"/><path d="M9 2h6v4H9z"/><path d="m9 14 2 2 4-4"/></symbol>
+  <symbol id="msg" viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></symbol>
+  <symbol id="video" viewBox="0 0 24 24"><rect x="2" y="6" width="14" height="12" rx="2"/><path d="m22 8-6 4 6 4z"/></symbol>
+  <symbol id="phone" viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></symbol>
+  <symbol id="grad" viewBox="0 0 24 24"><path d="M22 10 12 5 2 10l10 5 10-5z"/><path d="M6 12v5c3 2 9 2 12 0v-5"/></symbol>
+  <symbol id="wa" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2.1 1-2.4c.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .6l-.4.6-.4.5c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.1.5.1.7-.1l1-1.2c.2-.3.4-.2.7-.1l2 1c.3.1.5.2.5.3.1.2.1.6-.1 1.2z"/></symbol>
+</svg>
+
+<div class="demo">نموذج توضيحي من تصميم Forma Digital — اسم المدرّس وبياناته افتراضية</div>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#top">
+      <span class="logo">∑</span>
+      <span><b>أ. نموذج</b><small>مدرّس رياضيات — المرحلتان الإعدادية والثانوية</small></span>
+    </a>
+    <nav class="links">
+      <a href="#method">منهجية التدريس</a><a href="#groups">المجموعات</a><a href="#report">متابعة ولي الأمر</a><a href="#join">التسجيل</a>
+    </nav>
+    <a class="btn btn-light" href="#groups">احجز مقعدًا</a>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero" style="padding:0">
+  <div class="hero-img" role="img" aria-label="طالب يكتب حلًا في دفتره"></div>
+  <div class="wrap">
+    <span class="badge-open">التسجيل مفتوح للفصل الدراسي الأول</span>
+    <h1>رياضيات تُفهم خطوة بخطوة، لا تُحفظ</h1>
+    <p>مجموعات صغيرة لطلاب المرحلتين الإعدادية والثانوية، مع اختبارات دورية وتقرير أسبوعي يصل إلى ولي الأمر.</p>
+    <div class="actions">
+      <a class="btn btn-wa" href="https://wa.me/201000000000?text=%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%AA%D8%B3%D8%AC%D9%8A%D9%84"><svg class="wa-ic"><use href="#wa"/></svg>سجّل عبر واتساب</a>
+      <a class="btn btn-ghost" href="#groups">المجموعات والمواعيد</a>
+    </div>
+  </div>
+</section>
+
+<div class="wrap strip">
+  <div class="strip-in">
+    <div class="strip-item"><span class="ic"><svg class="i"><use href="#grad"/></svg></span><div><small>المراحل</small><b>الإعدادية والثانوية</b></div></div>
+    <div class="strip-item"><span class="ic"><svg class="i"><use href="#video"/></svg></span><div><small>طريقة الحضور</small><b>حضوري وعن بُعد</b></div></div>
+    <div class="strip-item"><span class="ic"><svg class="i"><use href="#phone"/></svg></span><div><small>للتسجيل والاستفسار</small><b dir="ltr">+20 100 000 0000</b></div></div>
+  </div>
+</div>
+
+<section id="method">
+  <div class="wrap two">
+    <div class="photo"><img src="https://images.unsplash.com/photo-1509228468518-180dd4864904?auto=format&fit=crop&w=1000&q=80" alt="معادلات رياضية على ورقة" loading="lazy"></div>
+    <div>
+      <span class="kicker">منهجية التدريس</span>
+      <h2>نظام واضح من الحصة الأولى حتى نهاية الفصل</h2>
+      <p class="sub">الهدف أن يفهم الطالب الفكرة ويتمكن من حل أي سؤال عليها، لا أن يحفظ خطوات الحل.</p>
+      <ul class="feat-list">
+        <li><span class="ic"><svg class="i"><use href="#users"/></svg></span><div><h3>مجموعات صغيرة</h3><p>عدد محدود في كل مجموعة ليحصل كل طالب على وقته.</p></div></li>
+        <li><span class="ic"><svg class="i"><use href="#book"/></svg></span><div><h3>ملخص لكل درس</h3><p>القواعد الأساسية وتمارين متدرجة وفق نظام الامتحان.</p></div></li>
+        <li><span class="ic"><svg class="i"><use href="#clip"/></svg></span><div><h3>اختبار كل أسبوعين</h3><p>لاكتشاف نقاط الضعف مبكرًا ومعالجتها قبل الامتحانات الشهرية.</p></div></li>
+        <li><span class="ic"><svg class="i"><use href="#msg"/></svg></span><div><h3>تقرير لولي الأمر</h3><p>الدرجات والواجبات والحضور، عبر واتساب كل أسبوع.</p></div></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="groups" class="tint">
+  <div class="wrap">
+    <span class="kicker">المجموعات والمواعيد</span>
+    <h2>اختر المجموعة المناسبة</h2>
+    <p class="sub">المواعيد المعروضة للتوضيح فقط، والتسجيل حسب الأسبقية.</p>
+    <div class="sched">
+      <div class="row head"><span>الصف</span><span>الموعد</span><span>الحالة</span></div>
+      <div class="row"><b>الصف الأول الإعدادي</b><span class="when">السبت والثلاثاء · ٤:٠٠ م</span><span class="tag ok">متاح</span></div>
+      <div class="row"><b>الصف الثاني الإعدادي</b><span class="when">الأحد والأربعاء · ٤:٠٠ م</span><span class="tag ok">متاح</span></div>
+      <div class="row is-full"><b>الصف الثالث الإعدادي</b><span class="when">السبت والثلاثاء · ٦:٠٠ م</span><span class="tag full">مكتملة</span></div>
+      <div class="row"><b>الصف الأول الثانوي</b><span class="when">الاثنين والخميس · ٥:٠٠ م</span><span class="tag ok">متاح</span></div>
+      <div class="row"><b>الصف الثاني الثانوي</b><span class="when">الأحد والأربعاء · ٧:٠٠ م</span><span class="tag few">٣ مقاعد متبقية</span></div>
+      <div class="row"><b>مجموعات عن بُعد</b><span class="when">مواعيد مسائية مرنة</span><span class="tag ok">متاح</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="report">
+  <div class="wrap two rev">
+    <div class="report" aria-hidden="true">
+      <div class="report-top"><span class="logo">∑</span><div><b>أ. نموذج</b><small>التقرير الأسبوعي — مثال</small></div></div>
+      <div class="msg"><div class="r"><span>الحضور</span><b>٢ من ٢</b></div><div class="r"><span>اختبار الأسبوع</span><b>١٧ من ٢٠</b></div><div class="r"><span>الواجب</span><b>مكتمل</b></div><small>٨:١٥ م</small></div>
+      <div class="msg">يُنصح بمراجعة تحليل المقدار الثلاثي قبل الامتحان الشهري.<small>٨:١٦ م</small></div>
+    </div>
+    <div>
+      <span class="kicker">متابعة ولي الأمر</span>
+      <h2>تعرف مستوى ابنك أولًا بأول</h2>
+      <p class="sub">يصلك كل أسبوع تقرير مختصر على واتساب يتضمن الحضور ودرجة الاختبار وحالة الواجب، مع ملاحظة واضحة عمّا يحتاج إلى مراجعة.</p>
+    </div>
+  </div>
+</section>
+
+<section id="join" class="tint">
+  <div class="wrap">
+    <span class="kicker">التسجيل</span>
+    <h2>ثلاث خطوات للبدء</h2>
+    <div class="steps">
+      <div class="step"><span class="n">٠١</span><div><h3>أرسل رسالة واتساب</h3><p>اسم الطالب وصفه الدراسي والمجموعة المناسبة.</p></div></div>
+      <div class="step"><span class="n">٠٢</span><div><h3>استلم التأكيد</h3><p>بالمكان وموعد الحصة الأولى وقائمة الأدوات المطلوبة.</p></div></div>
+      <div class="step"><span class="n">٠٣</span><div><h3>حصة تجريبية</h3><p>إن ناسبت الطريقةُ الطالبَ، يواصل مع المجموعة.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="wrap" style="max-width:860px">
+    <span class="kicker">أسئلة شائعة</span>
+    <h2>أسئلة أولياء الأمور</h2>
+    <details><summary>كم عدد الطلاب في المجموعة؟</summary><p>عدد محدود في كل مجموعة، وعند اكتمالها تُفتح قائمة انتظار.</p></details>
+    <details><summary>ماذا لو غاب الطالب عن حصة؟</summary><p>يمكنه حضور الدرس نفسه مع مجموعة أخرى في الأسبوع ذاته إن توفر مقعد، أو يحصل على ملخص الحصة.</p></details>
+    <details><summary>هل توجد مجموعات عن بُعد؟</summary><p>نعم، بالنظام نفسه والملخصات والاختبارات ذاتها.</p></details>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="cta">
+      <h2>المقاعد محدودة في كل مجموعة</h2>
+      <p>احجز مقعد ابنك أو ابنتك قبل اكتمال المجموعة.</p>
+      <div class="actions">
+        <a class="btn btn-wa" href="https://wa.me/201000000000?text=%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%AA%D8%B3%D8%AC%D9%8A%D9%84"><svg class="wa-ic"><use href="#wa"/></svg>سجّل عبر واتساب</a>
+        <a class="btn btn-ghost" href="tel:+201000000000"><svg class="i"><use href="#phone"/></svg>اتصل بنا</a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div><b>أ. نموذج</b><br>مدرّس رياضيات — المرحلتان الإعدادية والثانوية</div>
+      <div><b>الحضور</b><br>حضوري في مدينة افتراضية، وعن بُعد</div>
+      <div><b>تواصل</b><br><span dir="ltr">+20 100 000 0000</span></div>
+    </div>
+    <div class="credit">نموذج توضيحي من تصميم Forma Digital · الصور من Unsplash</div>
+  </div>
+</footer>
+
+<div class="mbar">
+  <a class="btn btn-outline" href="#groups"><svg class="i"><use href="#cal"/></svg>المواعيد</a>
+  <a class="btn btn-wa" href="https://wa.me/201000000000?text=%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%AA%D8%B3%D8%AC%D9%8A%D9%84"><svg class="wa-ic"><use href="#wa"/></svg>سجّل عبر واتساب</a>
+</div>
+</body>
+</html>
